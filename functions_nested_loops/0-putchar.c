@@ -17,7 +17,7 @@ int main(void)
 	int i;
 	int length = sizeof(word) / sizeof(word[0]);
 
-	for(i = 0; i < length - 1; i++)
+	for (i = 0; i < length - 1; i++)
 		_putchar(word[i]);
 
 
