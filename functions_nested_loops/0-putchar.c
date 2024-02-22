@@ -13,7 +13,14 @@
  */
 int main(void)
 {
-	_putchar("_putchar");
+	char word [] = "_putchar";
+	int i;
+	int length = sizeof(word);
+
+	for(i = 0; i < length; i++)
+		_putchar(word[i]);
+
+
 	_putchar("\n");
 
 	return (0);
