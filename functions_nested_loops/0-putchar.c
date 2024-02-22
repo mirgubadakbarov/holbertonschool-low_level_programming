@@ -1,5 +1,5 @@
 /*
- * File: 0-holberton.c
+ * File: 0-putchar.c
  * Auth: Mirgubad Akbarov
  *
  */
@@ -13,9 +13,9 @@
  */
 int main(void)
 {
-	char word [] = "_putchar";
+	char word[] = "_putchar";
 	int i;
-	int length = sizeof (word);
+	int length = sizeof(word) / sizeof(word[0]);
 
 	for(i = 0; i < length - 1; i++)
 		_putchar(word [i]);
