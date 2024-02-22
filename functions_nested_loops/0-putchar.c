@@ -15,10 +15,10 @@ int main(void)
 {
 	char word [] = "_putchar";
 	int i;
-	int length = sizeof(word);
+	int length = sizeof (word);
 
 	for(i = 0; i < length - 1; i++)
-		_putchar(word[i]);
+		_putchar(word [i]);
 
 
 	_putchar('\n');
