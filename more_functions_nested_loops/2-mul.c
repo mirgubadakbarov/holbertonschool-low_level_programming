@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,8 +7,7 @@
  *
  * Return: The result of the multiplication.
  */
-
-int mul(int num1, int num2);
+int mul(int a, int b)
 {
-	return (num1 * num2);
+	return (a * b);
 }
