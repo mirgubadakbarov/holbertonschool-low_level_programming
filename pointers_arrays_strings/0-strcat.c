@@ -1,14 +1,16 @@
-#include "main.h"
+char *_strcat(char *dest, char *src) {
+    char *ptr = dest; 
 
-char *strcat(char *dest, const char *src)
-{
-	int index = 0, dest_len = 0;
+    while (*ptr != '\0') {
+        ptr++;
+    }
 
-	while (dest[index++])
-		dest_len++;
-
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-
-	return (dest);
+    while (*src != '\0') {
+        *ptr = *src;
+        ptr++;
+        src++;
+    }
+	*ptr = '\0';
+	
+    return dest;
 }
