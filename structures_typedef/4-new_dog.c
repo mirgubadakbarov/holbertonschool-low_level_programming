@@ -2,7 +2,13 @@
 #include <string.h>
 #include "dog.h"
 
-size_t custom_strlen(const char *str);
+size_t custom_strlen(const char *str) {
+    size_t len = 0;
+    while (str[len] != '\0') {
+        len++;
+    }
+    return len;
+}
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
