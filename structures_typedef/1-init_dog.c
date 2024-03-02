@@ -1,9 +1,21 @@
-void print_dog(struct dog *d) {
-    if (d == NULL) {
-        return; // Do nothing if the input pointer is NULL
-    }
+#include "dog.h"
 
-    printf("Name: %s\n", d->name ? d->name : "(nil)");
-    printf("Age: %.2f\n", d->age);
-    printf("Owner: %s\n", d->owner ? d->owner : "(nil)");
+/**
+ * init_dog - Initializes a variable of type struct dog
+ * @d: Pointer to the struct dog variable to initialize
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ *
+ * Description: This function initializes the elements of a struct dog variable
+ *              with the provided name, age, and owner.
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+    if (d == NULL)
+        return;
+
+    d->name = name;
+    d->age = age;
+    d->owner = owner;
 }
