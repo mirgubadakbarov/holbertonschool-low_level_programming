@@ -2,6 +2,14 @@
 #include <string.h>
 #include "dog.h"
 
+/**
+ * custom_strcpy - Copies a string
+ * @dest: Pointer to the destination string
+ * @src: Pointer to the source string
+ *
+ * Return: Pointer to the destination string
+ */
+
 char *custom_strcpy(char *dest, const char *src)
 {
 	char *p = dest;
