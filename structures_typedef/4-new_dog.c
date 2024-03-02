@@ -5,17 +5,15 @@
 char *custom_strcpy(char *dest, const char *src)
 {
     char *p = dest;
-    
-    while ((*p++ = *src++) != '\0');
-        return dest;
+    while ((*p++ = *src++) != '\0')
+        ;
+    return dest;
 }
 
 size_t custom_strlen(const char *str)
 {
     size_t len = 0;
-    
-    while (str[len] != '\0')
-    {
+    while (str[len] != '\0') {
         len++;
     }
     return len;
