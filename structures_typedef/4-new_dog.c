@@ -2,6 +2,8 @@
 #include <string.h>
 #include "dog.h"
 
+size_t custom_strlen(const char *str);
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
     size_t name_len, owner_len;
