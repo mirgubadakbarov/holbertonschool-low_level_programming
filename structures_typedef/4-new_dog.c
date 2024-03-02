@@ -2,6 +2,13 @@
 #include <string.h>
 #include "dog.h"
 
+char *custom_strcpy(char *dest, const char *src) {
+    char *p = dest;
+    while ((*p++ = *src++) != '\0')
+        ;
+    return dest;
+}
+
 size_t custom_strlen(const char *str) {
     size_t len = 0;
     while (str[len] != '\0') {
@@ -26,7 +33,7 @@ dog_t *new_dog(char *name, float age, char *owner)
         return NULL;
     }
 
-    strcpy(new_dog->name, name);
+    custom_strcpy(new_dog->name, name);
 
     new_dog->owner = malloc(owner_len + 1);
     if (new_dog->owner == NULL) {
@@ -35,7 +42,7 @@ dog_t *new_dog(char *name, float age, char *owner)
         return NULL;
     }
 
-    strcpy(new_dog->owner, owner);
+    custom_strcpy(new_dog->owner, owner);
 
     new_dog->age = age;
 
