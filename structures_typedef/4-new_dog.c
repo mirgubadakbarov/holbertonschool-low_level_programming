@@ -5,6 +5,7 @@
 char *custom_strcpy(char *dest, const char *src)
 {
     char *p = dest;
+    
     while ((*p++ = *src++) != '\0')
         ;
     return dest;
@@ -13,6 +14,7 @@ char *custom_strcpy(char *dest, const char *src)
 size_t custom_strlen(const char *str)
 {
     size_t len = 0;
+    
     while (str[len] != '\0') {
         len++;
     }
@@ -22,6 +24,7 @@ size_t custom_strlen(const char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
     size_t name_len, owner_len;
+    
     dog_t *new_dog = malloc(sizeof(dog_t));
     if (new_dog == NULL)
         return NULL;
