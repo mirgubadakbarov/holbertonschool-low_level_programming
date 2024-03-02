@@ -2,6 +2,14 @@
 #include <string.h>
 #include "dog.h"
 
+/**
+ * custom_strcpy - Copies a string.
+ * @dest: Destination buffer.
+ * @src: Source string to be copied.
+ *
+ * Return: Pointer to the destination buffer.
+ */
+
 char *custom_strcpy(char *dest, const char *src)
 {
 	char *p = dest;
@@ -10,6 +18,13 @@ char *custom_strcpy(char *dest, const char *src)
 		;
 	return (dest);
 }
+
+/**
+ * custom_strlen - Calculates the length of a string.
+ * @str: Input string.
+ *
+ * Return: Length of the string.
+ */
 
 size_t custom_strlen(const char *str)
 {
@@ -22,6 +37,15 @@ size_t custom_strlen(const char *str)
 
 	return (len);
 }
+
+/**
+ * new_dog - Copies a string
+ * @name: Pointer to the destination string
+ * @age: Pointer to the source string
+ * @owner: Pointer to the source string
+ *
+ * Return: Pointer to the destination string
+ */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
