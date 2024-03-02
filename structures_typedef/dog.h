@@ -9,7 +9,6 @@
  *
  * Description:containing its name, age, and owner.
  */
-
 typedef struct dog
 {
     char *name;
