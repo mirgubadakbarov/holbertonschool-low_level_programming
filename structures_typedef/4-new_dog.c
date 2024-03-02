@@ -7,6 +7,7 @@ char *custom_strcpy(char *dest, const char *src)
 	char *p = dest;
 
 	while ((*p++ = *src++) != '\0');
+	
 	return (dest);
 }
 
@@ -19,7 +20,7 @@ size_t custom_strlen(const char *str)
 		len++;
 	}
 
-	return len;
+	return (len);
 }
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -57,5 +58,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	new_dog->age = age;
 
-	return new_dog;
+	return (new_dog);
 }
