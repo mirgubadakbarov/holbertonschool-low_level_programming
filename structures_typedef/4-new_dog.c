@@ -3,9 +3,10 @@
 #include "dog.h"
 
 /**
- * custom_strcpy - Copies a string
- * @dest: Pointer to the destination string
- * @src: Pointer to the source string
+ * new_dog - Copies a string
+ * @name: Pointer to the destination string
+ * @age: Pointer to the source string
+ * @owner: Pointer to the source string
  *
  * Return: Pointer to the destination string
  */
