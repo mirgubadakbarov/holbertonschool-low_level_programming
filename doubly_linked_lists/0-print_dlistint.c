@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * dlistint_len - Counts the number of elements in a doubly linked list
  * @h: Pointer to the head node of the list
