@@ -8,14 +8,13 @@
  * @n: integer
  * @next: points to the next node
  *
- * Description: singly linked list node structure
- * for Holberton project
- */
-typedef struct listint_s
+/* Definition of the doubly linked list structure */
+typedef struct dlistint_s
 {
-	int n;
-	struct listint_s *next;
-} listint_t;
+    int n;
+    struct dlistint_s *prev;
+    struct dlistint_s *next;
+} dlistint_t;
 
 size_t print_dlistint(const dlistint_t *h)
 size_t listint_len(const listint_t *h);
