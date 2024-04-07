@@ -7,8 +7,10 @@
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
-**/
-/* Definition of the doubly linked list structure */
+ *
+ * Description: doubly linked list node structure
+ * for Holberton project
+ */
 typedef struct dlistint_s
 {
     int n;
